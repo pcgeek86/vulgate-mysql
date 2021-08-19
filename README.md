@@ -57,3 +57,13 @@ SELECT DISTINCT BookName, BookNumber FROM vulgate.vulgate_text;
 ```
 SELECT * FROM vulgate.vulgate_text WHERE BookNumber >= 42 AND VerseText REGEXP 'patientia';
 ```
+
+### Find Out Which Book Has the Most Chapters
+
+```
+SELECT BookName, COUNT(DISTINCT Chapter) AS ChapterCount 
+  FROM vulgate.vulgate_text
+  GROUP BY BookName
+  ORDER BY ChapterCount
+  DESC;
+```
