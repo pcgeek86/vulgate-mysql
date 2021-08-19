@@ -6,13 +6,10 @@ This repository contains the text of the [Vulgate](https://en.wikipedia.org/wiki
 
 In order to import this database into your MySQL server instance, use one of the following methods.
 
-* You can copy the entire file to your clipboard and paste it into the MySQL CLI (_slow, but works_)
-* Run Adminer
-
 ### Import with Adminer
 
-1. Spin up a MySQL container and an Adminer container.
-2. Log into Adminer using [https://localhost:23455](https://localhost:23455).
+1. Spin up a MySQL container and an Adminer container
+2. Log into Adminer using [https://localhost:23455](https://localhost:23455)
 3. Click on the SQL Command link
 4. Copy / paste the file **or**
 5. Use the import option to ingest the `vulgate.sql` file
