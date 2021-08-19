@@ -31,3 +31,29 @@ docker run --name mysqlserver --detach --env MYSQL_ROOT_PASSWORD=trevor mysql:8.
 docker attach --interactive --tty mysqlserver bash
 mysql --password=trevor
 ```
+
+## Sample Queries
+
+### Select All Genesis Verses
+
+```
+SELECT * FROM vulgate.vulgate_text WHERE BookName = 'Genesis';
+```
+
+### Select All Verses Mentioning Spiritu Sancto
+
+```
+SELECT * FROM vulgate.vulgate_text WHERE VerseText REGEXP 'Spiritu Sancto';
+```
+
+### List All Books in the Vulgate
+
+```
+SELECT DISTINCT BookName, BookNumber FROM vulgate.vulgate_text;
+```
+
+### Select All Verses Mentioning Patience in the New Testament
+
+```
+SELECT * FROM vulgate.vulgate_text WHERE BookNumber >= 42 AND VerseText REGEXP 'patientia';
+```
