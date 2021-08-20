@@ -1,6 +1,6 @@
 # vulgate-mysql
 
-This repository contains the text of the [Vulgate](https://en.wikipedia.org/wiki/Vulgate) in a single MySQL file, for easy import.
+This repository contains the text of the [Vulgate](https://en.wikipedia.org/wiki/Vulgate) in a single MySQL file, for easy import. Data was taken from [this repository](https://github.com/LukeSmithxyz/vul) in tab-delimited format, and reformatted to a MySQL-compatible language, using a PowerShell script.
 
 ## Usage
 
